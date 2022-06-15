@@ -1,0 +1,55 @@
+/*Pagina 3 = header*/ 
+.menu {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px whitesmoke solid; 
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    position: sticky;
+    div h1 {
+        text-align: center;
+        background-color: black;
+        color: whitesmoke;
+        font-size: 50px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        border-bottom: #e7dfdd solid 2px;
+    }
+    div h1 a {
+        text-decoration: none;
+        color: #c1a205;
+    }
+    ul li {
+        list-style-type: none;
+        display: inline-block;
+        color: #c1a205;
+        font-size: 25px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin: 5px;
+        text-align: center;
+        border-bottom: 2px solid #c1a205;
+        a{
+        text-decoration: none;
+        color: #c1a205;
+        }
+        ul li:hover {
+        color: #c1a205;
+        text-decoration: underline;
+        }
+    }
+}
+
+/*Main Bootstrap carrousel*/
+
+/*FOOTER*/
+.pieDePagina {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: black;
+    color: #e7dfdd;
+    padding: 16px 0 16px 0;
+    display: flex;
+    flex-direction: column;   
+}
