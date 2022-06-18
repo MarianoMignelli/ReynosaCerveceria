@@ -12,10 +12,10 @@
             height: 100%;
             overflow: hidden;
             z-index: -1;
-            video {
-                min-width: 100%;
-                max-width: 100%;
-            } 
+            video{
+            min-width: 100%;
+            max-width: 100%;
+            }
         }
         .menuIndex {
             background-color: black;
@@ -39,6 +39,16 @@
                 text-decoration: none;
                 color: #c1a205;
             }
+            #btn-menu {
+                display: none;
+            }
+            label {
+                display: none;
+                :hover {
+                    cursor: pointer;
+                    background-color: rgb(101, 100, 100);
+                }
+            }
             ul li {
                 list-style-type: none;
                 display: inline-block;
@@ -48,7 +58,7 @@
                 margin: 5px;
                 text-align: center;
                 border-bottom: 2px solid #c1a205;
-                ul li:hover {
+                :hover {
                     color: #c1a205;
                     text-decoration: underline;
                     transition: transform 100ms;
@@ -62,5 +72,4 @@
         }  
     }
 }
-
 

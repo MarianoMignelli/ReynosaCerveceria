@@ -35,6 +35,13 @@
       .contenedorPrincipal .contenidoPrincipal .menuIndex div h1 a {
         text-decoration: none;
         color: #c1a205; }
+      .contenedorPrincipal .contenidoPrincipal .menuIndex #btn-menu {
+        display: none; }
+      .contenedorPrincipal .contenidoPrincipal .menuIndex label {
+        display: none; }
+        .contenedorPrincipal .contenidoPrincipal .menuIndex label :hover {
+          cursor: pointer;
+          background-color: #656464; }
       .contenedorPrincipal .contenidoPrincipal .menuIndex ul li {
         list-style-type: none;
         display: inline-block;
@@ -44,7 +51,7 @@
         margin: 5px;
         text-align: center;
         border-bottom: 2px solid #c1a205; }
-        .contenedorPrincipal .contenidoPrincipal .menuIndex ul li ul li:hover {
+        .contenedorPrincipal .contenidoPrincipal .menuIndex ul li :hover {
           color: #c1a205;
           text-decoration: underline;
           transition: transform 100ms;
@@ -58,18 +65,19 @@
   background-color: black;
   padding: 10px;
   text-align: center;
-  border-bottom: 3px whitesmoke solid;
+  border-bottom: 3px #c1a205 solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky; }
+  position: sticky;
+  top: 20%; }
   .menu div h1 {
     text-align: center;
     background-color: black;
-    color: whitesmoke;
+    color: #c1a205;
     font-size: 50px;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    border-bottom: #e7dfdd solid 2px; }
+    border-bottom: #c1a205 solid 2px; }
   .menu div h1 a {
     text-decoration: none;
     color: #c1a205; }
@@ -92,59 +100,71 @@
 /*MAIN*/
 .paginaDos {
   display: grid;
-  height: 75.5vh;
+  height: 75.2vh;
   grid-template-columns: repeat(3, 1 r);
   grid-template-rows: 1fr 1.5fr 2fr 0.2fr;
   grid-template-areas: "aside div div div" "section section section section" "section section section section";
-  gap: 10px;
-  align-content: space-around;
-  align-items: start;
+  gap: 5px;
   overflow-x: hidden; }
-  .paginaDos div h3 {
-    margin-top: 50px;
-    padding-bottom: 20px;
-    font-size: 35px;
-    font-weight: 700;
-    text-decoration: underline;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-align: center; }
-    .paginaDos div h3 main .parrafo {
-      display: block;
-      text-align: center;
-      margin-bottom: 30px;
-      margin-top: 20px;
-      display: flex;
-      align-items: center;
-      font-family: 'Barlow Semi Condensed', sans-serif; }
-    .paginaDos div h3 .salud {
-      font-size: 20px;
-      font-family: 'Barlow Semi Condensed', sans-serif;
-      margin-bottom: 30px;
+  .paginaDos .imagenUno {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 10px; }
+  .paginaDos .contenedorUno {
+    margin-top: 20px;
+    overflow: hidden; }
+    .paginaDos .contenedorUno h3 {
       margin-top: 50px;
-      margin-left: 50px; }
+      padding-bottom: 20px;
+      font-size: 35px;
+      font-weight: 700;
+      text-decoration: underline;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      text-align: center; }
+      .paginaDos .contenedorUno h3 .parrafo {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        font-family: 'Barlow Semi Condensed', sans-serif; }
+      .paginaDos .contenedorUno h3 .salud {
+        font-size: 20px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        margin-left: 50px; }
   .paginaDos .contenedorDos {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column;
+    height: 1000px; }
     .paginaDos .contenedorDos .textos {
-      margin-bottom: 20px;
+      width: 600px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 15px;
-      margin-bottom: 10px;
+      font-size: 16px;
       font-family: 'Barlow Semi Condensed', sans-serif;
-      text-align: center; }
+      text-align: center;
+      margin-right: 10px; }
 
 /*FOOTER*/
 .pieDePagina {
   text-align: center;
   font-size: 20px;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background-color: black;
+  background-color: blue;
   color: #e7dfdd;
   padding: 16px 0 16px 0;
+  margin-top: 12.1rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow: hidden; }
 
 /*Pagina 3 = header*/
 .menu {
@@ -178,7 +198,7 @@
     .menu ul li a {
       text-decoration: none;
       color: #c1a205; }
-    .menu ul li ul li:hover {
+    .menu ul li :hover {
       color: #c1a205;
       text-decoration: underline; }
 

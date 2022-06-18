@@ -3,18 +3,19 @@
     background-color: black;
     padding: 10px;
     text-align: center;
-    border-bottom: 3px whitesmoke solid; 
+    border-bottom: 3px #c1a205 solid; 
     display: flex;
     justify-content: space-between;  
     align-items: center; 
     position: sticky;
+    top: 20%;
     div h1 {
         text-align: center;
         background-color: black;
-        color: whitesmoke;
+        color: #c1a205;
         font-size: 50px;
         font-family: 'Barlow Semi Condensed', sans-serif;
-        border-bottom: #e7dfdd solid 2px;
+        border-bottom: #c1a205 solid 2px;
     }
     div h1 a {
         text-decoration: none;
@@ -44,54 +45,67 @@
 
 .paginaDos {
     display: grid;
-    height: 75.5vh;
+    height: 75.2vh;
     grid-template-columns: repeat(3, 1 r);
     grid-template-rows: 1fr 1.5fr 2fr 0.2fr ;
     grid-template-areas:    "aside div div div"
                             "section section section section"
-                            "section section section section";
-                            ;
-    gap: 10px;
-    align-content: space-around;
-    align-items: start;
+                            "section section section section";                            ;
+    gap: 5px;
+    
     overflow-x: hidden;
-    div h3{
-        margin-top: 50px;
-        padding-bottom: 20px;
-        font-size: 35px;
-        font-weight: 700;
-        text-decoration: underline;
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        text-align: center;
-        main .parrafo {
-            display: block;
-            text-align: center;
-            margin-bottom: 30px;
-            margin-top: 20px;
-            display: flex;
-            align-items: center;  
-            font-family: 'Barlow Semi Condensed', sans-serif; 
-        }
-        .salud {
-            font-size: 20px;
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            margin-bottom: 30px;
+    .imagenUno{
+        width: 400px;
+        height: 500px;
+        overflow: hidden;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .contenedorUno{
+        margin-top: 20px;
+        overflow: hidden;
+        
+        h3{
             margin-top: 50px;
-            margin-left: 50px;
+            padding-bottom: 20px;
+            font-size: 35px;
+            font-weight: 700;
+            text-decoration: underline;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            text-align: center;
+            .parrafo {
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+                margin-top: 40px;
+                display: flex;
+                align-items: center;  
+                font-family: 'Barlow Semi Condensed', sans-serif; 
+            }
+            .salud {
+                font-size: 20px;
+                font-family: 'Barlow Semi Condensed', sans-serif;
+                margin-bottom: 30px;
+                margin-top: 50px;
+                margin-left: 50px;
+            }
         }
     }
     .contenedorDos {
         display: flex;
         align-items: center;
+        flex-direction: column;
+        height: 1000px;
         .textos {
-            margin-bottom: 20px;
+            width: 600px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 15px;
-            margin-bottom: 10px;
+            font-size: 16px;
             font-family: 'Barlow Semi Condensed', sans-serif;
             text-align: center;
+            margin-right: 10px;
         }        
     }
 }
@@ -101,9 +115,11 @@
     text-align: center;
     font-size: 20px;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    background-color: black;
+    background-color: blue;
     color: #e7dfdd;
     padding: 16px 0 16px 0;
+    margin-top: 12.1rem;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+    overflow: hidden;   
 }
