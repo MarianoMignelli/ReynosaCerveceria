@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "init": "^0.1.2",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
   },
@@ -297,5 +298,13 @@
     "yargs": "^17.5.1",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianoMignelli/ReynosaCerveceria.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarianoMignelli/ReynosaCerveceria/issues"
+  },
+  "homepage": "https://github.com/MarianoMignelli/ReynosaCerveceria#readme",
   "description": ""
 }
